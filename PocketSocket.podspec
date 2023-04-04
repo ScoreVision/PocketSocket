@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'PocketSocket'
-  s.version  = '1.0.1'
+  s.version  = '1.0.2'
   s.license  = 'Apache 2.0'
   s.summary  = 'Objective-C websocket client/server library for building things that work in realtime on iOS and OS X.'
   s.description = 'Objective-C websocket client/server library. Conforms fully to RFC6455 websocket protocol, support for websocket compression via the permessage-deflate extension, passes all ~355 Autobahn tests with 100% compliance and comes with a driver level BYO networking API.'
@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/zwopple/PocketSocket.git', :tag => '1.0.1', :submodules => false }
   s.requires_arc = true
 
-  s.ios.deployment_target = '6.0'
-  s.osx.deployment_target = '10.8'
-  s.tvos.deployment_target = '9.0'
+  s.ios.deployment_target = '16.1'
+  s.osx.deployment_target = '10.13'
+  s.tvos.deployment_target = '11.0'
 
   s.subspec 'Core' do |ss|
     ss.public_header_files = 'PocketSocket/PSWebSocketDriver.h', 'PocketSocket/PSWebSocketTypes.h'
